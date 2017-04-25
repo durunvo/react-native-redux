@@ -1,5 +1,9 @@
 import MainScreen from './containers/MainScreen'
 
-export default () => ({
+import {
+  createRouter,
+} from '@expo/ex-navigation';
+
+export default createRouter(() => ({
   home: () => MainScreen,
-})
+}))
